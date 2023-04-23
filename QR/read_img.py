@@ -5,7 +5,7 @@ import csv
 import os
 
 # 加载图像
-image = Image.open("test.png")
+image = Image.open("1.jpg")
 # 解码二维码
 data = decode(image)
 # 打印二维码中包含的数据
@@ -22,6 +22,8 @@ dataofurl = data[0].data.decode()
 # print(URL)
 # URL['url'] = dataofurl
 
+
+# print(dataofurl)
 
 # 打开CSV文件以写入模式
 with open('ML/url_t.csv', mode='w') as csv_file:
